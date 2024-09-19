@@ -1,5 +1,63 @@
 body {
     font-family: "Outfit", system-ui;
-    font-weight: 900;
-    margin: 50px;
+    margin: 0;
+}
+
+.container {
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 35px;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.text-content {
+    text-align: center;
+    width: 80%;
+}
+
+p {
+    color:hsl(216, 15%, 48%);
+}
+
+@media only screen and (min-width: 431px) {
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 25%;
+    }
 }
